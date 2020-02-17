@@ -129,7 +129,7 @@ module AresMUSH
     # added to assist with categorized traits
     describe "arg1_slash_arg2_equals_arg3_slash_arg4" do
       it "should crack a matching command" do
-        args = ArgParser.parse(ArgParser.arg1_slash_arg2_equals_arg3_slash_arg4, "a/b = c/d")
+        args = ArgParser.parse(ArgParser.arg1_slash_arg2_equals_arg3_slash_arg4, "a/b=c/d")
         expect(args.arg1).to eq "a"
         expect(args.arg2).to eq "b"
         expect(args.arg3).to eq "c"
