@@ -53,6 +53,10 @@ module AresMUSH
       if (Demographics.all_demographics.include?('played by'))
         types << 'Played By'
       end
+# something to test out soon--can more freeform fields be added to census?
+#      if (Demographics.all_demographics.include?('residence'))
+#        types << 'Residence'
+      end
       if (Ranks.is_enabled?)
         types << 'Rank'
       end

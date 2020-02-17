@@ -10,6 +10,9 @@ module AresMUSH
           groups = Chargen.approved_chars.group_by { |c| c.demographic(:gender)}
         elsif (filter == 'Played By')
             groups = Chargen.approved_chars.group_by { |c| c.demographic('played by')}
+# something to test out soon--can more freeform fields be added to census?
+#        elsif (filter == 'Residence')
+#          groups = Chargen.approved_chars.group_by { |c| c.demographic('residence')}
         elsif (filter == 'Timezone')
           groups = Chargen.approved_chars.group_by { |c| c.timezone}
         elsif (filter == 'Rank')
