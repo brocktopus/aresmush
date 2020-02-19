@@ -13,7 +13,6 @@ module AresMUSH
           self.trait_name = titlecase_arg(args.arg1)
           self.category = titlecase_arg(args.arg2)
           self.description = args.arg3
-        end
       end
       
       def required_args
