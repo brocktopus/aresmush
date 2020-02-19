@@ -9,7 +9,7 @@ module AresMUSH
       def parse_args
        if (Chargen.can_approve?(enactor) && cmd.args =~ /\//)
           # syntax: trait/set arg1/arg2=arg3/arg4
-          args = cmd.parse_args(<arg1>/<arg2>=<arg3>/<arg4>)
+          args = cmd.parse_args((?<arg1>)/(?<arg2>)=(?<arg3>)/(?<arg4>))
 #         args = cmd.parse_args(ArgParser.arg1_slash_arg2_equals_arg3_slash_arg4)
 #         args = cmd.parse_args(ArgParser.arg1_slash_arg2_equals_arg3)
           
