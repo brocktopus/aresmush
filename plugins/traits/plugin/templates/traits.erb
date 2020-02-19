@@ -7,3 +7,15 @@
 <%= desc %>
 <% end %>
 %lf
+
+<% categories.each do |category| %>
+%xh%x!<%= category %>%xn
+<%= divider %>
+<% sorted_relationships(category).each do |name, desc| %>
+%ld
+%xh<%= name %>%xn
+<%= desc %>
+
+<% end %>
+<% end %>
+%lf
